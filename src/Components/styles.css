@@ -1,0 +1,36 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-form {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    background-color: #fefae0; /* Light yellow background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .input-field {
+    margin-bottom: 20px;
+  }
+  
+  .sign-in-button {
+    width: 100%;
+    background-color: #f19066; /* Coral color for sign-in button */
+    color: #ffffff; /* White text color */
+  }
+  
+  .sign-in-button:hover {
+    background-color: #e86f3c; /* Darker coral color on hover */
+  }
+  
+  /* Styling for the title */
+.title {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-size: 24px; /* Adjust font size */
+    color: #333333; /* Dark gray color */
+  }
