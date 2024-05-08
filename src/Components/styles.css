@@ -1,36 +1,107 @@
-.auth-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .login-form {
-    padding: 20px;
-    max-width: 400px;
-    width: 100%;
-    background-color: #fefae0; /* Light yellow background */
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  }
-  
-  .input-field {
-    margin-bottom: 20px;
-  }
-  
-  .sign-in-button {
-    width: 100%;
-    background-color: #f19066; /* Coral color for sign-in button */
-    color: #ffffff; /* White text color */
-  }
-  
-  .sign-in-button:hover {
-    background-color: #e86f3c; /* Darker coral color on hover */
-  }
-  
-  /* Styling for the title */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.sign-up-section {
+  background-color: #25b15f;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-title {
+  font-family: "Roboto";
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+.login-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.login-form-title {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 50%;
+  min-width: fit-content;
+  height: 30vh;
+  border-radius: 5%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.input-field {
+  font-family: "Roboto";
+  margin-bottom: 20px;
+  width: 100%;
+  height: 6vh;
+  border-style: none;
+}
+
+/* .input-field:hover {
+  border-style: solid;
+  border-width: 1%;
+} */
+
+.sign-in-button {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 120%;
+  width: 100%;
+  height: 8vh;
+  background-color: #25b15f;
+  color: #ffffff;
+  border-radius: 120px;
+  border-color: #354a5f;
+  border-width: 1%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-style: none;
+}
+
+.sign-up-button {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 120%;
+  width: 20%;
+  height: 8vh;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 120px;
+  border-width: 1%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-style: none;
+}
+
+.sign-up-button:hover {
+  background-color: #fff5e0;
+}
+
+.sign-in-button:hover {
+  background-color: #209952;
+}
+
 .title {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font */
-    font-size: 24px; /* Adjust font size */
-    color: #333333; /* Dark gray color */
-  }
+  font-family: "Roboto", sans-serif; 
+  font-size: 24px; 
+  color: #333333; 
+}

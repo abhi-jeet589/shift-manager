@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button, TextField, Card } from "@mui/material";
 import { auth } from "../firebaseConfig";
 import { signInWithEmailAndPassword, signOut } from "firebase/auth";
 import ShiftComponent from "./ShiftComponent";
@@ -35,48 +34,42 @@ const AuthComponent = () => {
   };
 
   return (
-    <div className="auth-container">
-      <Card elevation={3} className="login-form">
-        {loggedIn ? (
-          <>
-            <Button onClick={handleSignOut}>Sign Out</Button>
-            <ShiftComponent userId={userId} />
-            <HistoryComponent />
-          </>
-        ) : (
-          <>
-            <TextField
-              className="input-field"
-              label="Email"
-              variant="outlined"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              fullWidth
-              id="margin-dense"
-              margin="dense"
-            />
-            <TextField
-              className="input-field"
-              label="Password"
-              type="password"
-              variant="outlined"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              fullWidth
-              id="margin-dense"
-              margin="dense"
-            />
-            <Button
-              className="sign-in-button"
-              onClick={handleSignIn}
-              variant="contained"
-              color="primary"
-            >
-              Sign In
-            </Button>
-          </>
-        )}
-      </Card>
+    <div className="container">
+      <div className="sign-up-section">
+        <h2 className="sign-up-title">New here?</h2>
+        <button className="sign-up-button">Sign Up</button>
+      </div>
+      <div className="login-section">
+      <h2 className="login-form-title">Login to Your Account</h2>
+        <div className="login-form">
+          {loggedIn ? (
+            <>
+              <button onClick={handleSignOut}>Sign Out</button>
+              <ShiftComponent userId={userId} />
+              <HistoryComponent />
+            </>
+          ) : (
+            <>
+              <input
+                className="input-field"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email"
+              />
+              <input
+                className="input-field"
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Password"
+              />
+              <button className="sign-in-button" onClick={handleSignIn}>
+                Sign In
+              </button>
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
