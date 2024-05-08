@@ -6,9 +6,9 @@ import "./App.css";
 
 const App = () => {
   return (
-    <Box className="bg-image">
+    // <Box className="bg-image">
       <AuthComponent />
-    </Box>
+    // </Box>
   );
 };
 
